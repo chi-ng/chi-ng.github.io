@@ -67,7 +67,7 @@
 					<p>  <b>MediBook</b> is an online web app GP appointment booking service. It allows users to register with their GP online and book appointments with them when needed. </p>
 
 				<h5 class="header"> Roles </h5>
-					<p> UI design, wireframes, layout, gathering requirements, planning, prototype, testing. </p>
+					<p> UI design, wireframes, layout, gathering requirements, use case description, planning, prototype, testing. </p>
 
 				<h5 class="header"> Timeline </h5>
 					<p> 
@@ -95,7 +95,7 @@
 	<p> The system also will free up some time for both the doctors and the receptionists. The receptionists will be able to split their time taking phone calls to book appointments but also it allows them to spend more time for paperwork and helping to provide a friendly service in the GP. </p>
 	<p> A description box will be provided when booking an appointment, allowing doctors to quickly look over the details of the patient’s illness before seeing them.</p>
 
-	<h4 class="header"> Users </h4>
+	<h1 class="card-title1" style="color: rgb(107,190, 212);"> User analysis </h1>
 	<p> The MediBook system has 3 different user roles these are the<b> admin </b>role, <b>doctor </b> role and <b>patient</b> role. </p>
 	<b> Admin </b>
 	<p> The system administrator is the user group that is responsible for setting up and maintaining the system.</p>
@@ -121,13 +121,110 @@
 		<li> Can access the system widely from either desktop or mobile devices.</li>
 	</ul>
 
+
+	<h1 class="card-title1" style="color: rgb(107,190, 212);"> The environment </h1>
+	<p> Currently, booking an appointment is done online, by visiting the GP practice or by phone call. The reason for this is that it allows people to easily book an appointment to a local GP online or by phone and if they are near a GP they can just go in and book a time. The online GP web design is very simple as well as basic and we want to improve it by adding better and more exciting features. </p>
+
+	<p>The software that we are going to be using are HTML, CSS, PHP and JavaScript. This is used to make it easy and simple for users to use the website with minimal problems. We will use HTML to create the web page with CSS to edit and style the HTML web pages to make it look more attractive as well as appealing. </p>
+
 	
 
-	<h1 class="card-title1" style="color: rgb(107,190, 212);"> Design </h1>
+	<h1 class="card-title1" style="color: rgb(107,190, 212);"> Requirements </h1>
+	<h4 class="header"> Use-case diagram </h4>
+	<div>
+		<img src="media/img47.png" class="card-img">
+		<figcaption class="card-text" style="text-align: center"> Figure 1: Use-case diagram of the system </figcaption> <br>
+	</div>
+
+	<h4 class="header"> Use-case description </h4>
+	<table border=1 >
+	<tbody>
+		<tr>
+			<td>Use case name  </td>
+			<td> Book appointment </td>
+		</tr>
+		<tr>
+			<td> Brief description</td>
+			<td>This use case describes how a patient would book an appointment for a selected doctor through the MediBook system. </td>
+		</tr>
+		<tr>
+			<td>Actors </td>
+			<td> Patient </td>
+		</tr>
+		<tr>
+			<td> Preconditions</td>
+			<td> The patient must be logged in with their username and password.</td>
+		</tr>
+		<tr>
+			<td> Basic flow</td>
+			<td> After the patient has logged in successfully, a welcome page will display and show a dashboard of activities such as:
+		<ul>
+			<li>View profile</li>
+			<li>Book appointments</li>
+			<li>Medical record</li>
+			<li>Messages</li>
+			<li>Visit support centre/ Health advice</li>
+		</ul>
+
+			<p> B1. Patient select <b>“Book appointments”</b>.</p>
+			<p>B2. In a field “Slot”, select the <b>Date.</b></p>
+			<p>B3. The system will <b>show list of available doctors </b> for the date chosen.</p>
+			<p>B4. Patient then selects a <b>Time</b> for the doctor.</p>
+			<p>B5. FIll <b>appointment reason</b> (optional). </p>
+		</td>
+		</tr>
+		<tr>
+			<td> Alternative flows</td>
+			<td> 
+				<p> a) Apart from the online booking system, we also have the telephone system. </p>
+
+			<ol>
+				<li>The admin checks the appointment schedule to see if the chosen date is available. </li>
+				<li>Next the admin will ask the patient if that date is acceptable, if not then repeat the (1) step. </li>
+				<li>Once a date has been chosen, the admin will ask the patient to select the suitable time slot and doctor.</li>
+				<li>Lastly, the admin will ask for patient’s details and a security question such as “what is your date of birth?”, “can you confirm your postcode”, … </li>
+				<li>Then enter the required information of the patient into the appointment form. </li>
+				<li>Once all information has been filled, submit the form into the database. </li>
+			</ol>
+
+				<p> b)  </p>
+				<p><b>(B1) </b> User doesn’t have an account  </p>
+				<ul> 
+					<li> 1.1 Select <b>Register Now</b></li>
+					<li> 1.2 Fill in all <b>Your Personal Details</b></li>
+					<li> 1.3 Create a <b>Password</b></li>
+					<li> 1.4 Accept the <b>Terms and Conditions</b></li>
+					<li> 1.5 Click <b>Register and create account</b></li>
+				</ul>
+
+				<p><b>(B3) </b> There are no time slots available for the chosen date.  </p>
+				<ul> 
+					<li> 3.1 The system will suggest patient to select another available date.</li>
+					<ul> 
+						<li>  3.1.1 Incase of emergency, the patient can call the gp and explain the situation. </li>
+						<li> 3.1.2 Then follow <b>(a)</b> </li>
+
+					</ul>
+
+					<li> 3.2 Patient then select <b>Time </b>for the doctor. </li>
+					<li> 3.3 FIll <b>appointment reason </b>(optional). </li>
+					<li> 3.4 Click <b>“book appointment” </b> </li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td> Post condition</td>
+			<td> An appointment is successfully created and appears on the doctors schedule.</td>
+		</tr>
+	</tbody>
+</table>
+<br>
+
+
 	<h4 class="header"> Class diagram </h4>
 	<div>
 		<img src="media/img41.png" class="card-img">
-		<figcaption class="card-text" style="text-align: center"> Figure 1: Class diagram of the system </figcaption> <br>
+		<figcaption class="card-text" style="text-align: center"> Figure 2: Class diagram of the system </figcaption> <br>
 	</div>
 
 	<h4 class="header"> Design discussion </h4>
@@ -138,10 +235,10 @@
 		<li> <b>patientRecord </b>exists as a composition of <b>Patient</b>, if a patient is removed from the system so should their information, and so the <b>patientRecord </b>should not exist without the patient and hence a composition. </li>
 		<li> <b>prescriptionHistory</b> is an aggregation of <b>Prescription</b> as the patient will have a history of prescriptions without the patient having to order a prescription using the system, and thus <b>prescriptionHistory</b> can exist with the existence of its parent <b>Prescription</b>.</li>
 	</ul>
-	<h4 class="header"> Sequence diagram </h4>
+	<h4 class="header"> Sequence diagram - Book an appointment</h4>
 	<div>
 		<img src="media/img42.png" class="card-img">
-		<figcaption class="card-text" style="text-align: center"> Figure 2: Sequence diagram when booking appointment </figcaption> <br>
+		<figcaption class="card-text" style="text-align: center"> Figure 3: Sequence diagram when booking appointment </figcaption> <br>
 	</div>
 
 	<h1 class="card-title1" style="color: rgb(107,190, 212);"> Wireframes </h1>
