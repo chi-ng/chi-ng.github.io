@@ -88,6 +88,19 @@ footer {
   }
 }
 
+@media screen and (min-width: 601px) {
+  .meditable {
+    
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .meditable{
+    font-size: 12px;
+  }
+}
+
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
