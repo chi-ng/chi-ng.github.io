@@ -2,6 +2,11 @@
 <html>
 <head>
 	<title> Home · Tri Nguyen </title>
+	<!-- JS text animation --> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/png" href="">
 
@@ -25,172 +30,418 @@
     <!-- Code start here -->
 
 	<!-- Nav -->
+	<div class="top-header"> 
+		<nav class="navbar navbar-expand-lg navbar-light" >
+			<a class="navbar-brand mb-0 h1" href="index.html"> <img src="media/logo1.png" width="40" height="40"> Tri Nguyen</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<!-- Responsive toggler icon--> 
+			<span class="navbar-toggler-icon"></span>
+			</button>
 
-	<nav class="navbar navbar-expand-lg navbar-light" >
-		<a class="navbar-brand mb-0 h1" href="index.html"> <img src="media/logo1.png" width="40" height="40"> Tri Nguyen</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-		<!-- Responsive toggler icon--> 
-		<span class="navbar-toggler-icon"></span>
-		</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+			    <ul class="navbar-nav mr-auto ">
+			    		
+			    </ul>
+			    <span class="navbar-text">
+			      	<ul class="navbar-nav mr-auto ">
+					    <li class="nav-item active">
+					    <a class="nav-link" href="index.html"> Home <span class="sr-only"></span></a>
+					    </li>
+					    <div class="dropdown">
+					    	<li class="nav-item dropdown">
+					    		<a class="nav-link dropdown-toggle" href="">Projects</a> 
+					    		 <div class="dropdown-content">
+								    <a class="nav-link" href="#"> MyIndoorJungle </a>
+								    <a class="nav-link" href="ienglish.html"> iEnglish </a>
+								    <a class="nav-link" href="londontrainpass.html"> London Train Pass </a>
+								    <a class="nav-link" href="theweatherapp.html"> The Weather Mood App </a>
+								    <a class="nav-link" href="sold.html"> Sold! </a>
+								    <a class="nav-link" href="medibook.html"> Medibook </a>
+								    <a class="nav-link" href="sportwearvibe.html"> Sportwear Vibe </a>
+								 </div>
+					    	</li>
+						</div>
+					    <li class="nav-item">
+					    <a class="nav-link" href="blog.html">Blog</a>
+					    </li>
+					    <li class="nav-item">
+					    <a class="nav-link" href="media/Tri-Nguyen-CV.pdf">Resume</a>
+					    </li>
+					</ul>
+	    		</span>
+			</div>
+		</nav> 
+	</div>
+		
 
-		<div class="collapse navbar-collapse" id="navbarText">
-		    <ul class="navbar-nav mr-auto ">
-		    		
-		    </ul>
-		    <span class="navbar-text">
-		      	<ul class="navbar-nav mr-auto ">
-				    <li class="nav-item active">
-				    <a class="nav-link" href="index.html"> Home <span class="sr-only"></span></a>
-				    </li>
-				    <div class="dropdown">
-				    	<li class="nav-item dropdown">
-				    		<a class="nav-link dropdown-toggle" href="">Projects</a> 
-				    		 <div class="dropdown-content">
-							    <a class="nav-link" href="#"> MyIndoorJungle </a>
-							    <a class="nav-link" href="ienglish.html"> iEnglish </a>
-							    <a class="nav-link" href="londontrainpass.html"> London Train Pass </a>
-							    <a class="nav-link" href="theweatherapp.html"> The Weather Mood App </a>
-							    <a class="nav-link" href="sold.html"> Sold! </a>
-							    <a class="nav-link" href="medibook.html"> Medibook </a>
-							    <a class="nav-link" href="sportwearvibe.html"> Sportwear Vibe </a>
-							 </div>
-				    	</li>
+		<!-- Main -->
+		<div class="card text-center">
+		  	<div class="card-body">
+		  		<h1 class="card-title"> 👋🏻 Hello, I'm 
+					<span
+						class="txt-rotate text-primary"
+						data-period="2000"
+						data-rotate='[ "Tri!", "a UX/ UI designer.", "humbled.", "detail oriented.", "a nerdbird."  ]'>
+					</span>
+				</h1>
+
+		<!-- INTRO -->
+				<h1 class="card-title1">It's nice to meet you.</h1> <br>
+				<p class="card-des"> Product and UX/ UI designer on a mission to build products for others that enable them to become more productive.  </p> 
+				<p class="card-des"> Good story teller, passion and drive. Pinky swear. </p> <br>
+				<a class="btn btn-lg" href="media/Tri-Nguyen-CV.pdf" role="button">View resume</a>
+				<a class="btn1 btn-lg" href="mailto: lantri_11495@yahoo.com" role="button">✉️ Email me </a>
+
+		  	</div>
+		</div>
+	</div>
+<br>
+	<div class="card">
+  			<img src="media/thumbnail.png" class="card-img-bottom">
+	</div>
+	</div>
+	
+
+	<!--ABOUT ME -->
+	<div class="aboutme"> 
+	<div class="aboutme-content">
+		<div class="card border-0 padding-0">
+			<div class="row">
+				<div class="col-md-6">
+			      	<img src="media/grad.png" class="card-img">
+			    </div>
+			    <div class="col-md-6">
+			      	<div>
+			      		<P class="card-text"> ABOUT ME </P>
+			      		<h3> <i>"I'm not perfect, but I'm always myself"</i> </h3>
+				        <p class="firstletter">  I’m graduated with a bachelor’s degree at <a href="https://www.qmul.ac.uk" target="_blank"> QMUL </a> in Computer Science and Multimedia.	</p>
+				        <p> I learned my craft by working on side projects and guidance from some great mentors. I’m also self taught and use online learning resources to learn coding, web design and graphic design. I'm passionate about using design as a method for improving connections between people and the products they use. </p>
+				        <p> I'm an optimist. I'm a feminist. I'm an environmentalist. I'm a lifetime student. And I will be more things yet to come.  </p>
+			    	</div>
+			    </div>  
+			</div>
+		</div>
+	</div>
+	</div>
+	
+
+	<!-- WHAT I DO -->
+	<div class="whatido">
+		<div class="whatido-content">
+
+			<P class="card-text"> WHAT I DO </P>
+			<h3> Strategy, design and a bit of magic</h3>
+		</div>
+		<div class="card">
+			  <img src="media/thumbnail/whatido-thumbnail.png" class="card-img-bottom">
+			</div>
+
+	</div>
+
+
+
+		
+	
+	<!-- SCROLL ANIMATION UI DESIGN --> 
+	<div class="body-content"> 
+		<!-- MY PROJECTS -->
+		<div class="myproject">
+			<p class="card-text">  </p> 
+			<!-- TIMELINE-->
+    				<section class="timeline">
+    					<P class="card-text"> TIMELINE</P>
+    					<h3> My journey so far</h3>
+					  <ul>
+					    <li>
+					      <div>
+					        <time> Sep 2020 </time>
+					        <div class="discovery">
+					          <h1>UX/ UI Designer Intern </h1>
+					          <p>
+					            Currently working as UX/ UI designer Intern at Fivestar Apps.
+					          </p>
+					        </div>
+					      </div>
+					    </li>
+
+					    <li>
+					      <div>
+					        <time> Jul 2020 </time>
+					        <div class="discovery">
+					          <h1> Graduated in Computer Science and Multimedia</h1>
+					          <p>
+					            At Queen Mary University of London.
+					          </p>
+					        </div>
+					      </div>
+					    </li>
+
+					    <li>
+					      <div>
+					        <time> Nov 2018 </time>
+					        <div class="discovery">
+					          <h1>Vice President - Volunteering </h1>
+					          <p>
+					            Committee of Vietnamese Society  at Queen Mary University.
+					          </p>
+					        </div>
+					      </div>
+					    </li>
+
+					    <li>
+					      <div>
+					        <time> Jan 2018 </time>
+					        <div class="discovery">
+					          <h1>Administrator - Bestgrade Tuition Centre</h1>
+					          <p>
+					            Managed the tuition backend website; provide training for new co-workers.
+					          </p>
+					        </div>
+					      </div>
+					    </li>
+
+					    <li>
+					      <div>
+					        <time> Aug 2017 </time>
+					        <div class="discovery">
+					          <h1>IT Help Desk - MUFG Bank</h1>
+					          <p>
+					            Worked closely with design team to create/ build/ customise a new UML to build the high-level data flow diagram.
+					          </p>
+					        </div>
+					      </div>
+					    </li>
+
+					    <li>
+					      <div>
+					        <time> Aug 2012 </time>
+					        <div class="discovery">
+					          <h1>Helper - London Olympics and Paralympics 2012</h1>
+					          <p>
+					            Responsible for all cleaning activities and maintaining dinning areas.
+					          </p>
+					        </div>
+					      </div>
+					    </li>
+
+					  </ul>
+					</section>
+			</div>
+		</div>
+
+
+		
+		<div class="recent-project">
+			<div class="recent-project-content">
+				<P class="card-text" style="text-align: center;" > PROJECTS</P>
+			<!-- MY INDOOR JUNGLE --> 
+			<div class="section">
+				<div class="p fixed">
+					<h1 class="card-title1"> MyIndoorJungle - UX/ UI design</h1>
+					<p class="card-p"> Water and fertilizer reminder application for iOS users. </p>
+					<div class="row" >
+						<div class="myboxshadow"> 
+							<a href="#"> <img src="media/thumbnail/MyIndoorJungle-thumbnail.png" class="card-img"></a>
+						</div>
 					</div>
-				    <li class="nav-item">
-				    <a class="nav-link" href="blog.html">Blog</a>
-				    </li>
-				    <li class="nav-item">
-				    <a class="nav-link" href="media/Tri's resume.pdf">Resume</a>
-				    </li>
-				</ul>
-    		</span>
-		</div>
-	</nav>
+				</div>
+			</div>
+<br><br><br>
 
+			<!-- IENGLISH --> 
+			<div class="section">
+				<div class="p fixed">
+					<h1 class="card-title1"> iEnglish - UX/ UI design</h1>
+					<p class="card-p"> A website to learn English online. </p>
+					<div class="row">
+						<div class="myboxshadow"> 
+							<a href="ienglish.html"> <img src="media/thumbnail/ienglish-thumbnail.png" class="card-img"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+<br><br><br>
 
-	<!-- Main -->
+			<!-- LONDON TRAIN PASS --> 
+			<div class="section">
+				<div class="p fixed">
+					<h1 class="card-title1"> London Train Pass - UX design & website development</h1>
+					<p class="card-p"> A final year project for Londoners to top-up their Oyster cards and be able to scan the QR code at every London stations.  </p>
+					<div class="row">
+						<div class="myboxshadow"> 
+							<a href="londontrainpass.html"> <img src="media/thumbnail/LTP-thumbnail.png" class="card-img"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+<br><br><br>
 
-	<div class="row">
-	  	<div class="col-sm-7 nopadding">
-		    <div class="card border-0">
-		      	<div class="card-body">
-			        <h1 class="card-title"> 👋🏻 Hello, I'm Tri!</h1>
-			        <p class="card-text">A person who loves software development and English tea. </p>
-			        <h1 class="card-title1">It's nice to meet you.</h1> <br>
-			        <p class="card-p"> I’m graduated with a bachelor’s degree at <a href="https://www.qmul.ac.uk" target="_blank"> QMUL </a> in <b>Computer Science and Multimedia.</b>  </p> 
-					<p class="card-p"> I learned my craft by working on side projects and guidance from some great mentors. I’m also self taught and use online learning resources to learn coding, web design and graphic design. </p>
-					<p class="card-p"> Currently looking for a full-time oppotunities in UX/ UI design. You can download my resume and feel free to email me. </p> <br>
-					<a class="btn btn-dark btn-lg" href="media/Tri-Nguyen-CV.pdf" role="button">View resume</a>
-					<a class="btn btn-light btn-lg" href="mailto: lantri_11495@yahoo.com" role="button">Email me </a>
-					
-		      	</div>
-	    	</div>
-	  	</div>
-	  	<!-- PROFILE PHOTO -->
-		<div class="col-sm-5 nopadding">
-		    <div class="card border-0">
-		      	<div class="card-body">
-		        	<img class ="profile_picture" src="media/profile.png">
-		      	</div>
-		    </div>
-		</div>
-	</div>
-	<br> <br> 
+			<!-- THE WEATHER MOOD APP --> 
+			<div class="section">
+				<div class="p fixed">
+					<h1 class="card-title1"> The weather mood app - UX design </h1>
+					<p class="card-p"> Clean user interface design for the weather mobile app. Based on today's weather, a music playlist or movies is recommended. </p>
+					<div class="row">
+						<div class="myboxshadow"> 
+							<a href="theweatherapp.html"> <img src="media/thumbnail/the-weather-mood-app-thumbnail.png" class="card-img"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+<br><br><br>
 
+			<!-- SOLD! --> 
+			<div class="section">
+				<div class="p fixed">
+					<h1 class="card-title1"> Sold! - UX design & front-end development </h1>
+					<p class="card-p"> Clean user interface for an auction website using Django web framework.  </p>
+					<div class="row">
+						<div class="myboxshadow"> 
+							<a href="sold.html"> <img src="media/thumbnail/sold-thumbnail.png" class="card-img"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+<br><br><br>
 
-	<!-- MY PROJECTS -->
-	<p class="card-text"> MY PROJECT </p> 
-	<!-- MY INDOOR JUNGLE --> 
-	<h1 class="card-title1"> MyIndoorJungle - UX/ UI design</h1>
-	<p class="card-p"> Water and fertilizer reminder application for i0S users. </p>
-	<div class="row">
-		<div class="col-md-12"> 
-			<a href="#"> <img src="media/thumbnail/MyIndoorJungle-thumbnail.png" class="card-img"></a>
-		</div>
-	</div>
-	<br> <br> <br>
+			<!-- MEDIBOOK --> 
+				<div class="section">
+					<div class="p fixed">
+					<h1 class="card-title1"> Medibook - UX/ UI design & front-end development </h1>
+					<p class="card-p"> A case study for GP appointments and bookings.  </p>
+					<div class="row">
+						<div class="myboxshadow"> 
+							<a href="medibook.html"> <img src="media/thumbnail/medibook-thumbnail.png" class="card-img"></a>
+						</div>
+					</div>
+					</div>
+				</div>
+<br><br><br>
 
-	<!-- IENGLISH --> 
-	<h1 class="card-title1"> iEnglish - UX/ UI design</h1>
-	<p class="card-p"> A website to learn English online. </p>
-	<div class="row">
-		<div class="col-md-12"> 
-			<a href="ienglish.html"> <img src="media/thumbnail/ienglish-thumbnail.png" class="card-img"></a>
-		</div>
-	</div>
-	<br> <br> <br>
-
-	<!-- LONDON TRAIN PASS --> 
-	<h1 class="card-title1"> London Train Pass - UX design & website development</h1>
-	<p class="card-p"> A final year project for Londoners to top-up their Oyster cards and be able to scan the QR code at every London stations. The purpose of this project is to replace the traditional Oyster cards, reduce plastic production each year and avoid lost/ stolen travel cards.   </p>
-	<div class="row">
-		<div class="col-md-12"> 
-			<a href="londontrainpass.html"> <img src="media/thumbnail/LTP-thumbnail.png" class="card-img"></a>
-		</div>
-	</div>
-	<br> <br> <br>
-
-	<!-- THE WEATHER MOOD APP --> 
-	<h1 class="card-title1"> The weather mood app - UX design </h1>
-	<p class="card-p"> Clean user interface design for the weather mobile app. Based on today's weather, a music playlist or movies is recommended. </p>
-	<div class="row">
-		<div class="col-md-12"> 
-			<a href="theweatherapp.html"> <img src="media/thumbnail/the-weather-mood-app-thumbnail.png" class="card-img"></a>
-		</div>
-	</div>
-	<br> <br> <br>
-
-	<!-- SOLD! --> 
-	<h1 class="card-title1"> Sold! - UX design & front-end development </h1>
-	<p class="card-p"> Clean user interface for an auction website using Django web framework.  </p>
-	<div class="row">
-		<div class="col-md-12"> 
-			<a href="sold.html"> <img src="media/thumbnail/sold-thumbnail.png" class="card-img"></a>
+			<!-- SPORTWEAR VIBE --> 
+				<div class="section">
+					<div class="p fixed">
+						<h1 class="card-title1"> Sportwear Vibe- UX design & front-end development </h1>
+						<p class="card-p"> A case study for e-commerce website.  </p>
+						<div class="row">
+							<div class="myboxshadow"> 
+								<a href="sportwearvibe.html"> <img src="media/thumbnail/sportwear-thumbnail.png" class="card-img"></a>
+							</div>
+						</div>
+					</div>
+				</div>
 		</div>
 	</div>
-	<br> <br> <br>
+<br><br><br>
 
-	<!-- MEDIBOOK --> 
-	<h1 class="card-title1"> Medibook - UX/ UI design & front-end development </h1>
-	<p class="card-p"> A case study for GP appointments and bookings web application.  </p>
-	<div class="row">
-		<div class="col-md-12"> 
-			<a href="medibook.html"> <img src="media/thumbnail/medibook-thumbnail.png" class="card-img"></a>
-		</div>
+		<!-- FOOTER --> 
+	<div class="footer">
+		<div class="footer-content">
+			<div class="section"> 
+				<div class="p fixed">
+					<h1 class="card-title1"> LET'S W🚀RK TOGETHER</h1>
+					<br> <br>
+			  		<p> Get in touch for opportunities or just to say hi! 👋🏻 </p>
+
+			  		<p ><img style="width: 25px; height: 20px " src="media/linkedin.png"><a class="link-colour" href="https://www.linkedin.com/in/tri-nguyenn/" target="_blank"> Linkedin </p>
+			  		<p>✉️ <a class="link-colour" href="mailto:lantri_11495@yahoo.com">lantri_11495@yahoo.com</a> </p>
+			  		<p>📍 London, UK </p>
+					<div>	
+			</div>
+		<div>
 	</div>
-	<br> <br> <br>
-
-	<!-- SPORTWEAR VIBE --> 
-	<h1 class="card-title1"> Sportwear Vibe- UX design & front-end development </h1>
-	<p class="card-p"> A case study for e-commerce website.  </p>
-	<div class="row">
-		<div class="col-md-12"> 
-			<a href="sportwearvibe.html"> <img src="media/thumbnail/sportwear-thumbnail.png" class="card-img"></a>
-		</div>
-	</div>
-	<br> <br>
-
-
-	<hr>
-	<br>
-
-
-
 
 
 
 </body>
 
-<footer>
-  <h3 class="header">Let's connect </h3> 
-  <p class="card-text"> Get in touch for opportunities or just to say hi! 👋 </p>
-  <p><img style="width: 25px; height: 20px " src="media/linkedin.png"><a href="https://www.linkedin.com/in/tri-nguyenn/" target="_blank"> Linkedin </p>
-  <p>✉️ <a href="mailto:lantri_11495@yahoo.com">lantri_11495@yahoo.com</a> </p>
-  <p>📍 London, UK </p>
-  <br><br><br>
+	<!--  JS TEXT ANIMATED--> 
+		<script type="text/javascript">
+			var TxtRotate = function(el, toRotate, period) {
+		  this.toRotate = toRotate;
+		  this.el = el;
+		  this.loopNum = 0;
+		  this.period = parseInt(period, 10) || 2000;
+		  this.txt = '';
+		  this.tick();
+		  this.isDeleting = false;
+		};
 
-</footer>
+		TxtRotate.prototype.tick = function() {
+		  var i = this.loopNum % this.toRotate.length;
+		  var fullTxt = this.toRotate[i];
 
+		  if (this.isDeleting) {
+		    this.txt = fullTxt.substring(0, this.txt.length - 1);
+		  } else {
+		    this.txt = fullTxt.substring(0, this.txt.length + 1);
+		  }
+
+		  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+		  var that = this;
+		  var delta = 150 - Math.random() * 100;
+
+		  if (this.isDeleting) { delta /= 2; }
+
+		  if (!this.isDeleting && this.txt === fullTxt) {
+		    delta = this.period;
+		    this.isDeleting = true;
+		  } else if (this.isDeleting && this.txt === '') {
+		    this.isDeleting = false;
+		    this.loopNum++;
+		    delta = 500;
+		  }
+
+		  setTimeout(function() {
+		    that.tick();
+		  }, delta);
+		};
+
+		window.onload = function() {
+		  var elements = document.getElementsByClassName('txt-rotate');
+		  for (var i=0; i<elements.length; i++) {
+		    var toRotate = elements[i].getAttribute('data-rotate');
+		    var period = elements[i].getAttribute('data-period');
+		    if (toRotate) {
+		      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+		    }
+		  }
+		  // INJECT CSS
+		  var css = document.createElement("style");
+		  css.type = "text/css";
+		  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+		  document.body.appendChild(css);
+		};
+
+		// TIMELINE 
+		var items = document.querySelectorAll(".timeline li");
+		function isElementInViewport(el) {
+		  var rect = el.getBoundingClientRect();
+		  return (
+		    rect.top >= 0 &&
+		    rect.left >= 0 &&
+		    rect.bottom <=
+		      (window.innerHeight || document.documentElement.clientHeight) &&
+		    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+		  );
+		}
+
+		function callbackFunc() {
+		  for (var i = 0; i < items.length; i++) {
+		    if (isElementInViewport(items[i])) {
+		      if (!items[i].classList.contains("in-view")) {
+		        items[i].classList.add("in-view");
+		      }
+		    } else if (items[i].classList.contains("in-view")) {
+		      items[i].classList.remove("in-view");
+		    }
+		  }
+		}
+
+		window.addEventListener("load", callbackFunc);
+		window.addEventListener("scroll", callbackFunc);
+		</script>
 
 
 </html>
