@@ -178,6 +178,35 @@ body {
 }
 
 @media screen and (min-width: 601px) {
+  .hello-header  {
+    font-weight: 700;
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hello-header {
+    font-weight: 500;
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .hello-des  {
+    font-weight: 700;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hello-des {
+    
+    font-weight: 500;
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 601px) {
   .card-title1  {
   	font-weight: 700;
     font-size: 40px;
