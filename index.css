@@ -180,7 +180,7 @@ body {
 @media screen and (min-width: 601px) {
   .hello-header  {
     font-weight: 700;
-    font-size: 60px;
+    font-size: 40px;
   }
 }
 
@@ -194,7 +194,7 @@ body {
 @media screen and (min-width: 601px) {
   .hello-des  {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
@@ -202,7 +202,7 @@ body {
   .hello-des {
     
     font-weight: 500;
-    font-size: 23px;
+    font-size: 20px;
   }
 }
 
@@ -258,6 +258,9 @@ body {
     font-size: 12px;
   }
 }
+
+
+
 
 /* ----------- iPhone 4 and 4S ----------- */
 
@@ -567,7 +570,8 @@ rect:hover{
   opacity: 0.5;
 }
 
-/* TIMELINE*/
+/* 
+*/
 
 .myproject {
   background: linear-gradient(54deg, #E4BE76, #F4E9D5);
@@ -666,13 +670,14 @@ rect:hover{
   font-weight: bold;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 901px) {
   .timeline ul li div {
     width: 250px;
     flex-direction: column;
   }
   .timeline ul li div div {
     width: 95%;
+    height: 95%;
     margin: 5px;
   }
   .timeline ul li:nth-of-type(even) > div {
@@ -685,16 +690,30 @@ rect:hover{
   }
 
   .timeline ul li {
-    margin-left: 20px;
+    margin-left: 10px;
   }
   .timeline ul li div {
-    width: calc(100vw - 91px);
+    width: calc(100vw - 121px); /* (100vw - 91px)*/
   }
   .timeline ul li:nth-of-type(even) > div {
     left: 45px;
   }
 }
 
+@media screen and (max-width: 400px) {
+  .timeline ul li div {
+    width: 250px;
+    flex-direction: column;
+  }
+  .timeline ul li div div {
+    width: 95%;
+    height: 95%;
+    margin: 5px;
+  }
+  .timeline ul li:nth-of-type(even) > div {
+    left: 45px;
+  }
+}
 
 
 
