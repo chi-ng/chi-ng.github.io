@@ -732,6 +732,13 @@ rect:hover{
     height: 100%;
 }
 
+@media screen and (max-width: 600px) {
+  .video-container {
+    width: 80%;
+    height: 80%;
+
+  }
+}
 
 
 
